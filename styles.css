@@ -57,6 +57,7 @@ header .header-ctn {
 
 header .header-ctn .header__baseline {
   display: flex;
+  align-items: center;
 }
 
 header h1 {
