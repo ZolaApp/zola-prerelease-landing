@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  position: relative;
+  background: #000;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.alert {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1em;
+  padding: 1em;
+  background-color: rgb(225, 245, 196);
+  transition: opacity 350ms ease-in-out;
+}
+
+.alert[aria-hidden='false'] {
+  opacity: 1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 80px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+header .header-ctn {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 35px;
+  color: white;
+}
+
+header p {
+  max-width: 296px;
+  font-size: 16px;
+  line-height: 22px;
+  position: relative;
+  margin-left: 20px;
+}
+
+.main-ctn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-ctn .blocks {
+  width: 690px;
+}
+
+.main-ctn .block {
+  margin-bottom: 70px;
+}
+
+h3.subtitle {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.main-ctn .block .block__desc p {
+  margin-bottom: 10px;
+}
+
+.main-ctn .right-column .terminal {
+  margin-bottom: 70px;
+}
+
+.main-ctn .right-column .price .line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-ctn .right-column .price .line div:first-child {
+  width: 170px;
+}
+
+.main-ctn .right-column .price .line b {
+  color: white;
+}
+
+.main-ctn .right-column .price .line b {
+  color: white;
+}
+
+.form-ctn {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  margin-top: 50px;
+  padding: 70px 0;
+  border-top: solid 1px rgba(255, 255, 255, 0.2);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  font-size: 25px;
+  color: white;
+}
+
+.form_header p {
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.inputs-ctn {
+  display: flex;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 450px;
+}
+
+.inputs-ctn input,
+.inputs-ctn button {
+  border: none;
+  background: transparent;
+  height: 50px;
+}
+
+.inputs-ctn input[type='email'] {
+  flex: 1;
+  font-size: 14px;
+  font-family: Menlo, Consolas, monospace;
+  padding: 0 15px;
+  color: white;
+  outline: none;
+}
+
+.inputs-ctn button {
+  cursor: pointer;
+  font-size: 15px;
+  width: 165px;
+  background: white;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 0;
+}
+
+footer a {
+  margin-left: 20px;
+}
