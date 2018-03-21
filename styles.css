@@ -20,6 +20,8 @@ body {
   color: rgba(255, 255, 255, 0.5);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  line-height: 1.5;
+  padding: 0 1em;
 }
 
 .alert {
@@ -28,7 +30,6 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 1em;
   padding: 1em;
   background-color: #28c28d;
   color: #fff;
