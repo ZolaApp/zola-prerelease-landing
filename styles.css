@@ -79,7 +79,7 @@ header h1 {
   color: #fff;
 }
 
-header p {
+header h2 {
   position: relative;
   max-width: 296px;
   font-size: 100%;
@@ -88,7 +88,7 @@ header p {
   margin-left: 26px;
 }
 
-header .header-ctn p:before {
+header .header-ctn h2:before {
   position: absolute;
   content: '-';
   display: inline-block;
@@ -114,6 +114,10 @@ h3.subtitle {
   font-size: 125%;
   color: #fff;
   margin-bottom: 15px;
+}
+
+small {
+  font-size: 70%;
 }
 
 .main-ctn .block .block__desc p {
