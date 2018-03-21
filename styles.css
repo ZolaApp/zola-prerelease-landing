@@ -177,7 +177,6 @@ svg {
 .inputs-ctn {
   display: flex;
   margin: 0 auto;
-  max-width: 565px;
 }
 
 .inputs-ctn .input-wrapper {
