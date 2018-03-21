@@ -60,6 +60,11 @@ header .header-ctn {
   height: 80px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+header .header-ctn .header__baseline {
+  display: flex;
 }
 
 header h1 {
@@ -225,4 +230,10 @@ footer a {
   .form-ctn {
     display: block;
   }
+}
+
+.button.button-border {
+  border: solid 1px white;
+  padding: 0.5em 1em;
+  border-radius: 2px;
 }
