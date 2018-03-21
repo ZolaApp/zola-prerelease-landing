@@ -139,15 +139,27 @@
                 <input id="email" name="email" type="email" placeholder="example@gmail.com" required />
               </div>
               <div class="input-wrapper">
-                <label for="plan">Plan</label>
+                <label>Plan</label>
+
+                <div class="visually-hidden">
+                  <label for="free">Free</label>
+                  <input data-index="0" class="plan-radio" type="radio" name="plan" id="free" value="free" />
+
+                  <label for="10">10€/month</label>
+                  <input checked data-index="1" class="plan-radio" type="radio" name="plan" id="10" value="10" />
+
+                  <label for="100">100€/month</label>
+                  <input data-index="2" class="plan-radio" type="radio" name="plan" id="100" value="100" />
+                </div>
+
                 <div class="selector">
-                  <div class="item">
+                  <div data-index="0" class="item">
                     <span>👌</span>
                   </div>
-                  <div class="item selected">
+                  <div data-index="1" class="item selected">
                     <span>💸</span>
                   </div>
-                  <div class="item">
+                  <div data-index="2" class="item">
                     <span>💸💸</span>
                   </div>
                 </div>
@@ -170,55 +182,7 @@
     </div>
   </footer>
 
-  <script>
-    function getParams(url) {
-      try {
-        var params = {};
-        var parser = document.createElement('a');
-        parser.href = url;
-
-        var query = parser.search.substring(1);
-        var vars = query.split('&');
-
-        for (var i = 0; i < vars.length; i++) {
-          var pair = vars[i].split('=');
-          params[pair[0]] = decodeURIComponent(pair[1]);
-        }
-
-        return params;
-      } catch (error) {
-        return {}
-      }
-    }
-
-    function toggleAlert() {
-      var URL = window.location.href
-      var params = getParams(URL)
-
-      if ('formCompleted' in params && params.formCompleted === '1') {
-        var $alert = document.querySelector('.alert')
-        $alert.setAttribute('aria-hidden', 'false')
-
-        setTimeout(function () {
-          $alert.setAttribute('aria-hidden', 'true')
-        }, 5000)
-      }
-    }
-
-    function bindInterestedLink() {
-      var interestedLink = document.querySelector('.header__action a')
-      var emailInput = document.querySelector('[name="email"]')
-
-      interestedLink.addEventListener('click', function (e) {
-        e.preventDefault()
-        emailInput.focus()
-      })
-    }
-
-
-    toggleAlert()
-    bindInterestedLink()
-  </script>
+  <script src="./main.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59170978-7"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

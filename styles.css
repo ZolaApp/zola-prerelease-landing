@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+.visually-hidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding-top: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
 body {
   position: relative;
   background: #000;
@@ -190,9 +204,14 @@ svg {
   cursor: pointer;
 }
 
+.inputs-ctn .input-wrapper .selector div:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 .inputs-ctn .input-wrapper .selector div span {
   display: inline-block;
   margin-top: 4px;
+  pointer-events: none;
 }
 
 .inputs-ctn .input-wrapper .selector div:nth-child(2) {
