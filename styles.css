@@ -11,13 +11,15 @@ body {
 .alert {
   opacity: 0;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 1em;
   padding: 1em;
-  background-color: rgb(225, 245, 196);
+  background-color: #28c28d;
+  color: #fff;
   transition: opacity 350ms ease-in-out;
+  z-index: 20;
 }
 
 .alert[aria-hidden='false'] {
