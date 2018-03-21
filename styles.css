@@ -279,4 +279,27 @@ footer a {
   .form-ctn {
     display: block;
   }
+
+  .inputs-ctn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inputs-ctn .input-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .inputs-ctn .input-wrapper label {
+    display: inline-block;
+  }
+
+  .inputs-ctn .input-wrapper .selector,
+  .inputs-ctn .input-wrapper:first-child input,
+  .inputs-ctn .input-wrapper button {
+    border-radius: 10px;
+  }
+
+  .inputs-ctn .input-wrapper button {
+    margin-top: 14px;
+  }
 }
