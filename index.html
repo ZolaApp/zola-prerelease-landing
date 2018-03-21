@@ -171,8 +171,8 @@
   </footer>
 
   <script>
-    try {
-      function getParams(url) {
+    function getParams(url) {
+      try {
         var params = {};
         var parser = document.createElement('a');
         parser.href = url;
@@ -186,12 +186,16 @@
         }
 
         return params;
-      };
+      } catch (error) {
+        return {}
+      }
+    }
 
+    function toggleAlert() {
       var URL = window.location.href
       var params = getParams(URL)
 
-      if ('emailSent' in params && params.emailSent === '1') {
+      if ('formCompleted' in params && params.formCompleted === '1') {
         var $alert = document.querySelector('.alert')
         $alert.setAttribute('aria-hidden', 'false')
 
@@ -199,9 +203,21 @@
           $alert.setAttribute('aria-hidden', 'true')
         }, 5000)
       }
-    } catch (error) {
-      // Swallow error
     }
+
+    function bindInterestedLink() {
+      var interestedLink = document.querySelector('.header__action a')
+      var emailInput = document.querySelector('[name="email"]')
+
+      interestedLink.addEventListener('click', function (e) {
+        e.preventDefault()
+        emailInput.focus()
+      })
+    }
+
+
+    toggleAlert()
+    bindInterestedLink()
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59170978-7"></script>
   <script>
