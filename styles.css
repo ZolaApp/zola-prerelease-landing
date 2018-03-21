@@ -107,12 +107,6 @@ h3.subtitle {
   margin-bottom: 10px;
 }
 
-.main-ctn .block .block__desc p:before {
-  content: '•';
-  display: inline-block;
-  margin-right: 5px;
-}
-
 .main-ctn .right-column .terminal {
   margin-bottom: 70px;
 }
@@ -122,12 +116,10 @@ svg {
 }
 
 .main-ctn .right-column .price .line {
-  display: table;
   margin-bottom: 10px;
 }
 
 .main-ctn .right-column .price .line div:first-child {
-  display: table-cell;
   width: 170px;
 }
 
@@ -135,8 +127,11 @@ svg {
   color: white;
 }
 
-.main-ctn .right-column .price .line b {
-  color: white;
+.main-ctn .right-column .price .line b:before,
+.main-ctn .block .block__desc p:before {
+  content: '•';
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .form-ctn {
