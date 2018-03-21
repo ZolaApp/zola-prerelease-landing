@@ -260,6 +260,10 @@ footer a {
     margin-bottom: 2em;
   }
 
+  .header__action {
+    display: none;
+  }
+
   .main-ctn {
     flex-direction: column;
     align-items: center;
