@@ -203,35 +203,49 @@ svg {
   user-select: none;
 }
 
-.inputs-ctn .input-wrapper .selector div {
+.inputs-ctn .input-wrapper .selector > div {
   display: table-cell;
   vertical-align: middle;
-  width: 50px;
+  padding: 0 16px;
   line-height: 1em;
   cursor: pointer;
+}
+
+.inputs-ctn .input-wrapper .selector > div * {
+  pointer-events: none;
+}
+
+.inputs-ctn .input-wrapper .selector > .item > div {
+  margin-top: 3px;
+}
+
+.inputs-ctn .input-wrapper .selector > div b {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+}
+
+.inputs-ctn .input-wrapper .selector div span {
+  display: block;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.inputs-ctn .input-wrapper .selector .item:nth-child(2) span {
+  letter-spacing: -3px;
+}
+
+.inputs-ctn .input-wrapper .selector .item:last-child span {
+  letter-spacing: -3px;
 }
 
 .inputs-ctn .input-wrapper .selector div:not(:last-child) {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.inputs-ctn .input-wrapper .selector div span {
-  display: inline-block;
-  margin-top: 4px;
-  pointer-events: none;
-  color: #fff;
-}
-
-.inputs-ctn .input-wrapper .selector div:nth-child(2) {
-  letter-spacing: -5px;
-}
-
-.inputs-ctn .input-wrapper .selector div:last-child {
-  letter-spacing: -3px;
-}
-
-.inputs-ctn .input-wrapper .selector div.selected {
+.inputs-ctn .input-wrapper .selector > div.selected {
   background: #fff;
+  color: #000;
 }
 
 .inputs-ctn .input-wrapper:first-child input {
