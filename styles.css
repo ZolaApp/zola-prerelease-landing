@@ -201,6 +201,7 @@ svg {
   height: 50px;
   min-width: 150px;
   user-select: none;
+  overflow: hidden;
 }
 
 .inputs-ctn .input-wrapper .selector > div {
