@@ -42,12 +42,12 @@ body {
 }
 
 a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
 .button.button-border {
-  border: solid 1px white;
+  border: solid 1px #fff;
   padding: 0.5em 1em;
   border-radius: 2px;
 }
@@ -76,7 +76,7 @@ header .header-ctn .header__baseline {
 
 header h1 {
   font-size: 220%;
-  color: white;
+  color: #fff;
 }
 
 header p {
@@ -112,7 +112,7 @@ header .header-ctn p:before {
 
 h3.subtitle {
   font-size: 125%;
-  color: white;
+  color: #fff;
   margin-bottom: 15px;
 }
 
@@ -137,7 +137,7 @@ svg {
 }
 
 .main-ctn .right-column .price .line b {
-  color: white;
+  color: #fff;
 }
 
 .main-ctn .right-column .price .line b:before,
@@ -159,7 +159,7 @@ svg {
 
 .title {
   font-size: 150%;
-  color: white;
+  color: #fff;
 }
 
 .form_header p {
@@ -212,6 +212,7 @@ svg {
   display: inline-block;
   margin-top: 4px;
   pointer-events: none;
+  color: #fff;
 }
 
 .inputs-ctn .input-wrapper .selector div:nth-child(2) {
@@ -223,7 +224,7 @@ svg {
 }
 
 .inputs-ctn .input-wrapper .selector div.selected {
-  background: white;
+  background: #fff;
 }
 
 .inputs-ctn .input-wrapper:first-child input {
@@ -246,7 +247,7 @@ svg {
   font-size: 90%;
   font-family: Menlo, Consolas, monospace;
   padding: 0 15px;
-  color: white;
+  color: #fff;
   outline: none;
 }
 
@@ -254,7 +255,7 @@ svg {
   cursor: pointer;
   font-size: 95%;
   width: 165px;
-  background: white;
+  background: #fff;
   margin-top: 25px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
