@@ -67,11 +67,20 @@ header h1 {
 }
 
 header p {
+  position: relative;
   max-width: 296px;
   font-size: 16px;
   line-height: 22px;
   position: relative;
-  margin-left: 20px;
+  margin-left: 26px;
+}
+
+header .header-ctn p:before {
+  position: absolute;
+  content: '-';
+  display: inline-block;
+  top: 25%;
+  left: -16px;
 }
 
 .main-ctn {
@@ -95,6 +104,12 @@ h3.subtitle {
 
 .main-ctn .block .block__desc p {
   margin-bottom: 10px;
+}
+
+.main-ctn .block .block__desc p:before {
+  content: '•';
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .main-ctn .right-column .terminal {
