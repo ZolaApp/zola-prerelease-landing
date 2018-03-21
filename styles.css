@@ -126,10 +126,6 @@ h3.subtitle {
   margin-bottom: 15px;
 }
 
-small {
-  font-size: 70%;
-}
-
 .main-ctn .block .block__desc p {
   margin-bottom: 10px;
 }
@@ -144,10 +140,6 @@ svg {
 
 .main-ctn .right-column .price .line {
   margin-bottom: 10px;
-}
-
-.main-ctn .right-column .price .line div:first-child {
-  width: 170px;
 }
 
 .main-ctn .right-column .price .line b {
@@ -309,6 +301,7 @@ footer a {
 
   .main-ctn .block {
     margin-bottom: 2em;
+    margin-right: 0;
   }
 
   .main-ctn .right-column .terminal {
