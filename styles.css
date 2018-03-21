@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+::selection {
+  background: #bab7fa;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #bab7fa;
+  color: #fff;
+}
+
 .visually-hidden {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important;
