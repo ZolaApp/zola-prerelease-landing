@@ -118,10 +118,10 @@ svg {
 
 .header .header__baseline::before {
   position: absolute;
-  content: '-';
+  content: '–';
   display: inline-block;
   top: 25%;
-  left: -16px;
+  left: -19px;
 }
 
 .main-ctn {
