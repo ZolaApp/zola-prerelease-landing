@@ -31,7 +31,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  padding: 0 1em;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
@@ -68,6 +67,7 @@ svg {
 .container {
   max-width: 1180px;
   margin: 0 auto;
+  padding: 0 1em;
 }
 
 .alert {
@@ -146,15 +146,15 @@ svg {
   margin-bottom: 70px;
 }
 
-.main-ctn .right-column .price .line {
+.main-ctn .right-column .pricing .line {
   margin-bottom: 10px;
 }
 
-.main-ctn .right-column .price .line b {
+.main-ctn .right-column .pricing .line b {
   color: #fff;
 }
 
-.main-ctn .right-column .price .line b:before,
+.main-ctn .right-column .pricing .line b:before,
 .main-ctn .block .block__desc p:before {
   content: '•';
   display: inline-block;
@@ -299,7 +299,7 @@ footer a {
 }
 
 @media (max-width: 901px) {
-  header {
+  .header {
     margin-bottom: 2em;
   }
 
