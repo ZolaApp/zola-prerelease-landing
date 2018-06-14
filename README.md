@@ -1,6 +1,6 @@
 # Zola pre-release landing
 
-[Zola pre-release landing](https://github.com/ZolaApp/zola-prerelease-landing) is the source code for Zola’s pre-release landing page. It is not used in production anymore but kept for posteriority.
+[Zola pre-release landing](https://github.com/ZolaApp/zola-prerelease-landing) is the source code for Zola’s pre-release landing page. ⚠️ It is not used in production anymore but kept for posteriority.
 
 # Getting started
 
